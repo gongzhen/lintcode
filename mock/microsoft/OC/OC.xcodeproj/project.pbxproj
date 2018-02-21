@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D14EC5F203DC3FA00149E3F /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14EC55203DC3F900149E3F /* TreeNode.m */; };
+		3D14EC60203DC3FA00149E3F /* UndirectedGraphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14EC56203DC3F900149E3F /* UndirectedGraphNode.m */; };
+		3D14EC61203DC3FA00149E3F /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14EC58203DC3F900149E3F /* NSMutableArray+Stack.m */; };
+		3D14EC62203DC3FA00149E3F /* TrieNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14EC5A203DC3FA00149E3F /* TrieNode.m */; };
+		3D14EC63203DC3FA00149E3F /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14EC5D203DC3FA00149E3F /* NSMutableArray+Queue.m */; };
+		3D14EC68203DC40300149E3F /* Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14EC66203DC40300149E3F /* Interval.m */; };
+		3D14EC69203DC40300149E3F /* ListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D14EC67203DC40300149E3F /* ListNode.m */; };
 		60CCF43C203D621A00D10690 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF43B203D621A00D10690 /* main.m */; };
 		60CCF445203D62AC00D10690 /* LC.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF444203D62AC00D10690 /* LC.m */; };
 		60CCF448203D66E500D10690 /* LC105.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CCF447203D66E500D10690 /* LC105.m */; };
@@ -25,6 +32,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D14EC55203DC3F900149E3F /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
+		3D14EC56203DC3F900149E3F /* UndirectedGraphNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndirectedGraphNode.m; sourceTree = "<group>"; };
+		3D14EC57203DC3F900149E3F /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Queue.h"; sourceTree = "<group>"; };
+		3D14EC58203DC3F900149E3F /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		3D14EC59203DC3FA00149E3F /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		3D14EC5A203DC3FA00149E3F /* TrieNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrieNode.m; sourceTree = "<group>"; };
+		3D14EC5B203DC3FA00149E3F /* TrieNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrieNode.h; sourceTree = "<group>"; };
+		3D14EC5C203DC3FA00149E3F /* UndirectedGraphNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndirectedGraphNode.h; sourceTree = "<group>"; };
+		3D14EC5D203DC3FA00149E3F /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
+		3D14EC5E203DC3FA00149E3F /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		3D14EC64203DC40300149E3F /* Interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interval.h; sourceTree = "<group>"; };
+		3D14EC65203DC40300149E3F /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		3D14EC66203DC40300149E3F /* Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interval.m; sourceTree = "<group>"; };
+		3D14EC67203DC40300149E3F /* ListNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListNode.m; sourceTree = "<group>"; };
 		60CCF438203D621A00D10690 /* OC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OC; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CCF43B203D621A00D10690 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60CCF442203D626500D10690 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -65,10 +86,24 @@
 			isa = PBXGroup;
 			children = (
 				60CCF43B203D621A00D10690 /* main.m */,
-				60CCF446203D66E500D10690 /* LC105.h */,
-				60CCF447203D66E500D10690 /* LC105.m */,
 				60CCF443203D62AC00D10690 /* LC.h */,
 				60CCF444203D62AC00D10690 /* LC.m */,
+				60CCF446203D66E500D10690 /* LC105.h */,
+				3D14EC64203DC40300149E3F /* Interval.h */,
+				3D14EC66203DC40300149E3F /* Interval.m */,
+				3D14EC65203DC40300149E3F /* ListNode.h */,
+				3D14EC67203DC40300149E3F /* ListNode.m */,
+				3D14EC57203DC3F900149E3F /* NSMutableArray+Queue.h */,
+				3D14EC5D203DC3FA00149E3F /* NSMutableArray+Queue.m */,
+				3D14EC5E203DC3FA00149E3F /* NSMutableArray+Stack.h */,
+				3D14EC58203DC3F900149E3F /* NSMutableArray+Stack.m */,
+				3D14EC59203DC3FA00149E3F /* TreeNode.h */,
+				3D14EC55203DC3F900149E3F /* TreeNode.m */,
+				3D14EC5B203DC3FA00149E3F /* TrieNode.h */,
+				3D14EC5A203DC3FA00149E3F /* TrieNode.m */,
+				3D14EC5C203DC3FA00149E3F /* UndirectedGraphNode.h */,
+				3D14EC56203DC3F900149E3F /* UndirectedGraphNode.m */,
+				60CCF447203D66E500D10690 /* LC105.m */,
 				60CCF442203D626500D10690 /* PrefixHeader.pch */,
 			);
 			path = OC;
@@ -131,9 +166,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D14EC61203DC3FA00149E3F /* NSMutableArray+Stack.m in Sources */,
+				3D14EC60203DC3FA00149E3F /* UndirectedGraphNode.m in Sources */,
+				3D14EC68203DC40300149E3F /* Interval.m in Sources */,
+				3D14EC69203DC40300149E3F /* ListNode.m in Sources */,
 				60CCF448203D66E500D10690 /* LC105.m in Sources */,
+				3D14EC63203DC3FA00149E3F /* NSMutableArray+Queue.m in Sources */,
+				3D14EC62203DC3FA00149E3F /* TrieNode.m in Sources */,
 				60CCF445203D62AC00D10690 /* LC.m in Sources */,
 				60CCF43C203D621A00D10690 /* main.m in Sources */,
+				3D14EC5F203DC3FA00149E3F /* TreeNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
