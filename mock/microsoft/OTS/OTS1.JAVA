@@ -7,6 +7,10 @@ import java.util.regex.*;
 class ListNode {
 	public char value;
 	ListNode next;
+	public ListNode(char v) {
+		value = v;
+		next = null;
+	}
 }
 public class OTS1 {
 
@@ -21,27 +25,22 @@ public class OTS1 {
 		ListNode p1 = n1;
 		ListNode p2 = n2;
 		int signN1 = 1, signN2 = 1;
-		if(Character.isLetter(p1.value)) {
-			if(p1.value == '+') {
-				signN1 = 1;
-			} else if (p1.value == '-') {
-				signN1 = -1;
-			}
-			while(Character.isLetter(p1.value)) {
-				p1 = p1.next;	
-			}			
+		if(p1.value == '+') {
+			signN1 = 1;
+			p1 = p1.next;	
+		} else if (p1.value == '-') {
+			signN1 = -1;
+			p1 = p1.next;	
 		}
-		if(Character.isLetter(p2.value)) {
-			if(p2.value == '+') {
-				signN2 = 1;
-			} else if (p2.value == '-') {
-				signN2 = -1;
-			}
-			p2 = p2.next;
-			while(Character.isLetter(p2.value)) {
-				p2 = p2.next;	
-			}			
-		}	
+				
+		
+		if(p2.value == '+') {
+			signN2 = 1;
+			p2 = p2.next;	
+		} else if (p2.value == '-') {
+			signN2 = -1;
+			p2 = p2.next;	
+		}		
 
 		/// n1 and n2 both starts from digit.
 		StringBuilder sb1 = new StringBuilder();
@@ -49,9 +48,10 @@ public class OTS1 {
 			sb1.append(p1.value);
 			p1 = p1.next;
 		}
-		StringBuilder sb2 = new StringBuilder();
+		StringBuilder sb2 = new StringBuilder();		
 		while(p2 != null && Character.isDigit(p2.value)) {
 			sb2.append(p2.value);
+
 			p2 = p2.next;
 		}
 
@@ -67,7 +67,16 @@ public class OTS1 {
 
 	public static void main(String[] args) {
 		OTS1 obj = new OTS1();		
-
+		ListNode n1 = new ListNode('1');
+		ListNode n2 = new ListNode('2');
+		ListNode sign = new ListNode('-');
+		ListNode n3 = new ListNode('3');
+		ListNode n4 = new ListNode('4');
+		n1.next = n3;
+		sign.next = n2;
+		n2.next = n4;
+		ListNode res = obj.compare(n1, sign);
+		System.out.println(res.value);
 	}
 
 }
